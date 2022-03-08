@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "email": "sri@gmail.com",
+      "password": "sriram98",
+      "id": 2
+    },
+    {
+      "email": "harisri@gmail.coms",
+      "password": "sriram98",
+      "id": 3
+    },
+    {
+      "email": "pppp@gmail.com",
+      "password": "sriram",
+      "id": 4
+    },
+    {
+      "email": "hhiii@gmail.com",
+      "password": "sriram",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,167 @@
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="assets/pic9.jpg" class="d-block w-100 ">
+    <div class="carousel-caption">
+    <h2>YOU'VE RUN, NOW LEAP.</h2>
+    <h5>Watching the world of next-tech unfold? It's time to be part of it.</h5>
+    <div class="d-grid gap-2 col-4 mx-auto">
+      <button class="btn btn-outline-secondary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+      >Join Us</button>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0"></div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="assets/pic4.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title" id="scrolls1">About Cloudripples</h5>
+          <p class="card-text">CLOUDRIPPLES is a Information technology, Software development and Managed services company that helps enterprises rejuvenate their business for the modern digital age.  </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="assets/4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title" id="scrolls2" >Enterprise Apps</h5>
+          <p class="card-text">Our Innovate and Automate strategy will help our customers to build seamless business applications that will start in the future and stay there..</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="assets/2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title" id="scrolls3" >Mobile App Development</h5>
+          <p class="card-text">We provide full length data solutions cycle from ingesting to analysis. Manage and monitor the data and help you get the best cognitive and predictive analysis with our Data Lake Management</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="assets/image2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title" id="scrolls4">Cloud Services</h5>
+          <p class="card-text">Market your applications quickly with cloud computing. We secure your data , help and support with cloud computing resources. We ensure secured cloud driven system which provides you a one stop platform for all your business needs. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="assets/3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title" id="scrolls5" >Quality Engineering</h5>
+          <p class="card-text">cloudripples Creates more value with less investment by Enable scalable and responsive future technology in business processes for increased productivity, cut cost, and reduce error, efficiencies, and ROI.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="assets/image.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title" id="scrolls6">Managed Services</h5>
+          <p class="card-text">Keeping an IT environment to run smoothly needs a consistent attention to every detail. cloudripples provides top notch managed services including infrastructure support, Network Monitoring and support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Register Here</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="usersForm" >
+            <div class="form-group">
+              <label >First name</label>
+              <input type="text" id="firstname" name="firstname" formControlName="firstname" class="form-control" >
+              <span style="color: red;"
+              *ngIf="firstname && firstname.invalid && firstname.touched">
+              Please enter firstname..
+            </span>
+            </div>
+            <div class="form-group">
+              <label>Last name</label>
+              <input type="text"  id="lastname" name="lastname"  formControlName="lastname" class="form-control" >
+              <span style="color: red;"
+              *ngIf="lastname && lastname.invalid && lastname.touched">
+              Please enter lastname..
+            </span>
+            </div>
+            <div class="form-group">
+              <label  >Email </label>
+              <input type="email"  id="email" name="email" formControlName="email" class="form-control">
+              <span style="color: red;"
+              *ngIf="email && email.invalid && email.touched">
+              Please enter valid email address..
+            </span>
+            </div>
+            <div class="form-group">
+              <label >Date of birth</label>
+              <input type="date"  id="dateofbirth" name="dateofbirth" formControlName="dateofbirth" class="form-control" >
+              <span style="color: red;"
+              *ngIf="dateofbirth && dateofbirth.invalid && dateofbirth.touched">
+              Please enter date of birth..
+            </span>
+            </div>
+            <div class="form-group">
+              <label >Mobile no</label>
+              <input type="tel"   id="mobileno" name="mobileno" formControlName="mobileno" class="form-control" >
+              <span style="color: red;"
+              *ngIf="mobileno && mobileno.invalid && mobileno.touched">
+              Please enter mobile no..
+            </span>
+            </div>
+          </form>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" (click)="usersSubmit()">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-dark" id="scrollsfooter">
+  <footer>
+    <div class="container1">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 item">
+          <h3>Services</h3>
+            <ul>
+              <li><a>IT Consulting</a></li>
+              <li><a>Software Development</a></li>
+              <li><a>Mobile App</a></li>
+              <li><a>Business Analysis</a></li>
+              <li><a>Technical Support</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 item">
+          <h3>About Cloudripples</h3>
+            <ul>
+              <li><a>Leadership</a></li>
+              <li><a>Careers</a></li>
+              </ul>
+        </div>
+        <div class="col-md-6 item text">
+          <h3>Address</h3>
+          <ul>
+            <li><a>Email: contact@cloudripples.io</a></li>
+            <li><a>Reg Office:</a></li>
+            <li><a>Cloud Ripples Pvt Ltd, #34, First Floor, 2nd Main Road, Ashok Nandavanam, Noombal</a></li>
+            <li><a> Tamil Nadu, Chennai - 600077</a></li>
+            <br>
+            <li><a>Branch:</a></li>
+            <li><a>Cloud Ripples Pvt Ltd, #50, Middle St, New Saram, Saram, Puducherry - 605013</a></li>
+          </ul>
+        </div>
+        <div class="col item social"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-linkedin"></i></a></div></div>
+        <p class="copyright">Cloudripples © 2022</p>
+      </div>
+  </footer>
+</div>
